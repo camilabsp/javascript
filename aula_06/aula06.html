@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript - aula 6</title>
+</head>
+<body>
+    <div id="area">
+        interaja...
+
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click',clicar) //cria um evento de clicar
+        a.addEventListener('mouseenter',entrar) //mouse entra
+        a.addEventListener('mouseout',sair) //mouse sai
+
+        function clicar(){
+            a.innerText = 'clicou!' //muda nome ao clicar
+            a.style.background = 'red' //muda cor ao clicar
+        }
+
+        function entrar() {
+            a.innerText = 'entrou!' 
+        }
+
+        function sair () {
+            a.innerText = 'saiu!'
+            a.style.background = 'green'
+        }
+
+    </script>
+    
+</body>
+</html>

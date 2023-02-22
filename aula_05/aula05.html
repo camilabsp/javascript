@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript - aula 5</title>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div id="msg2">Ou Clique aqui</div>
+    <script>
+    //seleção por marca (tag)
+        var corpo = window.document.body 
+        var p1 = window.document.getElementsByTagName('p')[0] //primeiro parágrafo
+        p1.style.color = 'yellow' //muda a cor da letra
+        window.document.write('Esta escrito assim: ' + p1.innerText) //mostra o que está escrito 
+        corpo.style.background = 'gray'
+    //seleção por ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        d.style.color = 'yellow'
+    //por seletor (forma nova)
+        var c = window.document.querySelector('div#msg2') //igual ao CSS
+        c.style.background = 'pink'
+        c.style.color = 'black'
+        
+
+    </script>
+    
+</body>
+</html>

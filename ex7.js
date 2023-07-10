@@ -10,3 +10,4 @@ function circunferencia (raio) {
 }
 
 console.log(circunferencia(2.5));
+console.log(circunferencia(3));
